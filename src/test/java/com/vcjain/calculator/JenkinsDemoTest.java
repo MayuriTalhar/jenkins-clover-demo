@@ -30,20 +30,20 @@ public class JenkinsDemoTest
         driver.quit();
     }
 
-    @Test
+   @Test(timeout=10000)
     public void testCasePassed()
     {
         Assert.assertTrue(driver.findElement(By.xpath("//form[@id='login_form']")).isDisplayed());
     }
 
-    @Test
+   @Test(timeout=10000)
     public void testCaseFailed()
     {
         Assert.assertTrue(driver.findElement(By.xpath("//form[@id='failed case']")).isDisplayed());
     }
 
     @Ignore
-    @Test
+    @Test(timeout=10000)
     public void testCaseIgnored()
     {
         Assert.assertTrue(driver.findElement(By.xpath("//form[@id='ignored case']")).isDisplayed());

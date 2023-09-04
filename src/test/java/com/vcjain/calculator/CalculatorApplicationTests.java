@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class CalculatorApplicationTests {
 
-	@Test
+	@Test(timeout=10000)
 	void contextLoads() {
 	}
 

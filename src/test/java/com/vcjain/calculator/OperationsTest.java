@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 public class OperationsTest {
 
-        @Test
+        @Test(timeout=10000)
         public void testAdd()
         {
                 Operations operations = new Operations();
